@@ -1,0 +1,176 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin: 0px;
+    padding: 0;
+background-color: rgb(223, 204, 179);
+
+}
+.Event_Name{
+    display: flex;
+align-items: center;
+    margin: 20px auto;
+    color: red;
+}
+#image{
+    width: 50vw;
+    height: 70vh;
+    border: 2px solid black;
+    margin: 30px auto;
+    box-shadow: 5px 5px 5px #888888;
+}
+#image img{
+    width: 100%;
+    height: 100%;
+}
+#event_Date{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#event_Date div{
+    color: blue;
+}
+#myvanue{
+    /* width: 30vw; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+#myvanue h4{
+    margin-right: 10px;
+    color: green;
+}
+#vanue{
+    display: flex;
+    flex-direction: row;
+    margin: auto 50px;
+}
+#vanue span{
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin: auto 20px;
+}
+#vanue span h4{
+    color: green;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+.timer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 5px;
+    /* justify-content: space-evenly; */
+}
+.timer span{
+    margin-right: 20px;
+    font-size:20px ;
+    color: rgb(8, 155, 240);
+}
+.timer div p{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 5px;
+    color: red;
+}
+@media screen and (max-width:900px) and (min-width:500px){
+    #image{
+        width: 70vw;
+        height: 80vh;
+    }
+    #event_Date{
+       flex-direction: column;
+       align-items: center;
+    }
+    #myvanue{
+        flex-direction: row;
+    }
+    
+    #vanue span{
+      flex-direction: row;
+      margin: auto 4vw;
+    }
+    #vanue span h3{
+        margin: 10px;
+    }
+}
+@media screen and (max-width:500px) and (min-width:350px){
+    #image{
+        width: 80vw;
+        height: 70vh;
+    }
+    .Event_Name{
+      font-size: medium;
+    }
+    #event_Date{
+       flex-direction: column;
+       align-items:normal;
+    }
+    #myvanue{
+        flex-direction: row;
+        font-size: small;
+        margin-left: 10px;
+    }
+    #vanue{
+      margin: auto;
+    }
+    #vanue span{
+      flex-direction: row;
+      margin: auto 0vh;
+      margin-right: 1.5vh;
+    }
+    #vanue span h4{
+        margin: 5px;
+    }
+    .timer div p{
+        font-size: 35px;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width:350px) {
+    #image{
+        width: 90vw;
+        height: 50vh;
+    }
+    .Event_Name{
+      font-size: small;
+    }
+    #event_Date{
+       flex-direction: column;
+       align-items:normal;
+    }
+    #myvanue{
+        flex-direction: row;
+        font-size: small;
+        margin-left: 10px;
+    }
+    #vanue{
+      margin: auto;
+    }
+    #vanue span{
+      flex-direction: column;
+      margin: auto 20px;
+    }
+    #vanue span h4{
+        margin: 1px;
+    }
+    .timer div p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .timer div{
+        margin: auto 0px;
+    }
+    .timer span{
+        margin-right: 5px;
+        font-size: 15px ;
+        color: rgb(8, 155, 240);
+    }
+}
