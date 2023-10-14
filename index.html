@@ -15,7 +15,7 @@
     <div id="event_Date">
         <div id="myvanue"><h4>VANUE </h4>RGPV Conference Hall</div>
         <div id="vanue">
-            <span class="day"><h4>TIMING </h4>  12 : 00 : 00 AM</span>
+            <span class="day"><h4>TIMING </h4>  12 : 00 : 00 PM</span>
             <span class="date"><h4>DATE </h4> 30-10-2023</span>
         </div>
     </div>
@@ -25,16 +25,13 @@
     <div><p id="LMinutes"></p>  <span>Minutes</span></div>
     <div><p id="LSecond"></p><span>Seconds</span></div>
   </div>
-
     <script>  
        let day= document.getElementById("day");
        let hour = (document.getElementById("LHour"));
         let minute = document.getElementById("LMinutes");
         let second= document.getElementById("LSecond");
-  
-     
  const data = ()=>{
-      let date2 = new Date(2023,10,30,11,59,59);
+      let date2 = new Date(2023,10,30,23,59,59,999);
       let date1 = new Date();
       console.log(date1.getDate());
       console.log(date2.getHours());
@@ -44,7 +41,6 @@
         minute.innerHTML = (date2.getMinutes()-date1.getMinutes())+ " : ";
        second.innerHTML = (date2.getSeconds()-date1.getSeconds());
         }
-      
        setInterval(data,1000);
     </script>
 </body>
